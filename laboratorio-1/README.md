@@ -1,3 +1,3 @@
-# Algoritmos y Estructura de Datos I
-## Funciones, tipos, clases y alto orden
+# Funciones, tipos, clases y alto orden
 
+En `ejercicios` se encuentran los ejercicios de esta sección.
