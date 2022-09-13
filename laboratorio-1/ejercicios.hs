@@ -74,7 +74,7 @@
         paratodo' (x:xs) t = t x && paratodo' xs t
         
 -- b) existe’ :: [a] -> (a -> Bool) -> Bool, dada una lista xs de tipo [a] y un
--- predicado t :: a -> Bool, determina si alg´un elemento de xs satisface el predicado
+-- predicado t :: a -> Bool, determina si algún elemento de xs satisface el predicado
 -- t.
         existe' :: [a] -> (a -> Bool) -> Bool
         existe' [] t = False
@@ -286,16 +286,16 @@
         paratodo''' xs = cuantGen (&&) True xs id
 
 -- b) existe’ con cuantGen
-        existe''' :: [Bool] -> Bool
-        existe''' xs = cuantGen (||) False xs id
+        existe''' :: [a] -> (a -> Bool) -> Bool
+        existe''' xs t = cuantGen (||) False xs t
 
 -- c) sumatoria’ con cuantGen
-        sumatoria''' :: [Int] -> Int
-        sumatoria''' xs = cuantGen (+) 0 xs id
+        sumatoria''' :: [a] -> (a -> Int) -> Int
+        sumatoria''' xs t = cuantGen (+) 0 xs t
 
 -- d) productoria’ con cuantGen
-        productoria''' :: [Int] -> Int
-        productoria''' xs = cuantGen (*) 1 xs id
+        productoria''' :: [a] -> (a -> Int) -> Int
+        productoria''' xs t = cuantGen (*) 1 xs t
 
 
 -- ################################################################### --
