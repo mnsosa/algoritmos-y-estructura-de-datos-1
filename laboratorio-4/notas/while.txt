@@ -1,0 +1,27 @@
+while (n > 0) {
+	printf("hola\n");
+	n--;
+}
+
+
+EJECUTAMOS ESTO
+
+n = 10
+
+mientras n (10) > 0
+	hola
+	resta 1 a n
+
+sigue siendo verdad que n > 0?
+	n (9) > 0? si
+		hola
+		resta 1 a n
+	n (8) > 0? si
+		hola
+		resta 1 a n
+	...
+	
+	n (0) > 0? no
+	termina
+
+n = 0
